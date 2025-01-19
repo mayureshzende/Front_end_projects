@@ -1,0 +1,26 @@
+h1 {
+  font-size: 100px;
+  background-color: brown;
+}
+
+p {
+  color: blueviolet;
+}
+
+#firstPara {
+  border: solid brown 3px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+}
+.firstclass {
+  background-color: coral;
+  font-size: 50px;
+}
+
+.testspan {
+  /* display: block; */
+  background-color: darkgoldenrod;
+  height: 150px;
+  width: 200px;
+}
