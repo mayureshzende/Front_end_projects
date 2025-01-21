@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: none;
+  background-color: #e2e5e8;
+  background-image: linear-gradient(98deg, #e2e5e8 0%, #ffffff 100%);
+}
+
+.navBox {
+  height: 60px;
+  width: 100vw;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(226, 125, 125, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navTag {
+  display: flex;
+  width: 100%;
+}
+.navList {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navList p {
+  font-size: 2rem;
+}
+
+.navList ul {
+  list-style-type: none;
+}
+.navList li {
+  list-style-type: none;
+}
+
+.navList a {
+  text-decoration: none;
+  color: #e5dcdc;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.mainContainer {
+  width: 50%;
+  margin: auto;
+  border: 1px solid black;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 30px black;
+}
+
+.itemContent {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100vw;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(226, 125, 125, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+img {
+  border-radius: 20%;
+  height: 150px;
+  width: 100px;
+}
+
+.rightbox {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s linear 0s;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 20px;
+}
+
+.rightbox:hover {
+  transform: scale(1.1);
+}
+
+.rightbox .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(36, 34, 34, 0.713);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+
+.rightbox:hover .overlay {
+  opacity: 1;
+}
