@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cards</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: hsla(169, 76%, 48%, 1);
+
+        background: linear-gradient(
+          90deg,
+          hsla(169, 76%, 48%, 1) 0%,
+          hsla(67, 87%, 82%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+          90deg,
+          hsla(169, 76%, 48%, 1) 0%,
+          hsla(67, 87%, 82%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+          90deg,
+          hsla(169, 76%, 48%, 1) 0%,
+          hsla(67, 87%, 82%, 1) 100%
+        );
+
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1ED7B5", endColorstr="#F0F9A7", GradientType=1 );
+      }
+      #cardHolder {
+        border: 1px solid white;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        height: 400px;
+        width: 300px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+        background-color: #f8f7f7;
+      }
+      #imgProp {
+        /* margin: 10px; */
+        height: 180px;
+        width: 180px;
+        border-radius: 10px;
+      }
+
+      #cardHolder h2 {
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+
+      #cardHolder p {
+        /* font-weight: bold;
+         */
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="cardHolder">
+        <img id="imgProp" src="../imgs/qr.jpg" alt="qr" />
+        <div>
+          <h2>Improve your skill, by scanning the above QR</h2>
+          <p>Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
