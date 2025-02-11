@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contianer {
+  width: 65vw;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0 auto 20px;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.header_desc {
+  max-width: 568px;
+  text-align: center;
+  color: rgb(105, 99, 99);
+  margin: 0 auto;
+}
+
+.InfoheadingName {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.aboutPrd {
+  margin: 10px 0;
+  font-size: 0.8rem;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  border: 1px solid rgb(233, 224, 224);
+  border-radius: 8px;
+  gap: 20px;
+}
+
+.imgHolder {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  object-position: center;
+  /* position: absolute; */
+}
+
+.card_image_container {
+  position: relative;
+  overflow: hidden;
+  height: 7rem;
+}
+.imageDiv {
+  overflow: hidden;
+}
+.userAnchor {
+  font-size: 0.7rem;
+}
+.dateFormatter {
+  font-size: 0.7rem;
+}
+.card_image_container .imgHolder:hover {
+  transform: scale(1.1);
+  transition-duration: 200ms;
+  overflow: hidden;
+}
+.maincontainer {
+  /* background-color: burlywood; */
+  border: 1px solid rgb(76, 71, 71);
+  border-radius: 10px 10px 0 0;
+}
+
+.InfoContainer {
+  padding: 10px 10px;
+  /* margin: 10px 0; */
+}
+
+.userContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+.userLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.userLogo {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin: 10px;
+  background-color: cadetblue;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+.userFormatter {
+  font-size: 0.7rem;
+}
+.buttonContainer {
+  font-size: 0.7rem;
+  border: 1px solid gray;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1360px) {
+  .cardsContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .cardsContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
