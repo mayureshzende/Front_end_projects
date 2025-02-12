@@ -35,7 +35,7 @@
 .cardsContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
   border: 1px solid rgb(233, 224, 224);
   border-radius: 8px;
   gap: 20px;
@@ -117,20 +117,19 @@ a {
 @media screen and (max-width: 1360px) {
   .cardsContainer {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
   }
 }
 
 @media screen and (max-width: 1080px) {
   .cardsContainer {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    /* grid-template-rows: repeat(4, 1fr); */
   }
 }
-
 @media screen and (max-width: 720px) {
   .cardsContainer {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    /* grid-template-rows: repeat(8, 1fr); */
   }
 }
