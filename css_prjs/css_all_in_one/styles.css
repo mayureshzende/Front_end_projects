@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --primaryColor: #534d4d;
+  --hoverColor: #83a2eb;
+  --buttonBgColor: rgb(120, 120, 212);
+  --buttonFgColor: rgb(228, 240, 240);
+  --buttonHvColor: rgb(85, 82, 100);
+  /* --buttonHvColor: rgb(30, 27, 40); */
+  --link-color: #8d8282;
+}
+
+.header-container {
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px auto;
+  /* max-width: 950px; */
+  width: 60%;
+}
+
+.brand-logo {
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+.heading-logo-name {
+  display: flex;
+  gap: 0.4rem;
+}
+.logo-name {
+  font-weight: bold;
+  font-size: 1.375rem;
+  color: var(--primaryColor);
+}
+.nav-links {
+  display: flex;
+  gap: 13px;
+}
+.a-links {
+  /* gap: 20px; */
+  color: var(--link-color);
+}
+
+.a-links:hover {
+  color: var(--hoverColor);
+}
+
+.contact-us {
+  display: bold;
+}
+
+.HamburgerMenu {
+  display: none;
+}
+
+@media screen and (max-width: 1090px) {
+  .contact-us {
+    display: none;
+  }
+
+  .nav-links {
+    /* animation: slideIntoHamburger 1s ease-out forwards; */
+    display: none;
+    gap: 13px;
+  }
+  .HamburgerMenu {
+    display: block;
+    height: 1.8rem;
+    width: 1.8rem;
+    color: var(--primaryColor);
+    /* background-color: var(--link-color); */
+  }
+
+  @keyframes slideIntoHamburger {
+    0% {
+      opacity: 0;
+      transform: translateX(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(1000%);
+    }
+  }
+}
+
+.HamburgerMenu:hover {
+  transform: scale(1);
+}
+#contact-button {
+  background-color: var(--buttonBgColor);
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: var(--buttonFgColor);
+}
+
+#contact-button:hover {
+  background-color: var(--buttonHvColor);
+  border: 1px soild red;
+}
