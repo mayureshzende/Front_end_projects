@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* :root {
+  --p: 0;
+} */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: start;
+  gap: 20px;
+  min-height: 350px;
+  min-width: 600px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-color: #dcd9d4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(
+      at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+  background-blend-mode: soft-light, screen;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+p {
+  font-size: 1.1rem;
+}
+
+.userInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.user-search-container {
+  display: flex;
+  gap: 10px;
+}
+#user-input {
+  padding: 7px;
+  width: 60%;
+  border-radius: 3px;
+  border: none;
+  border-color: #fa709a;
+}
+
+#search-user {
+  padding: 7px;
+  width: 20%;
+}
+
+.statsGraph {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.easy-progress,
+.medium-progress,
+.hard-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.circle {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  background-color: chocolate;
+  background: conic-gradient(#eb89a3 calc(var(--p) * 1%), #e45c57 0%);
+}
+
+.user-info {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  padding: 10px;
+  min-width: 100px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  background-color: #eb89a3;
+  border-radius: 10px;
+}

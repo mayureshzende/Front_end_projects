@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM manupation</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1 id="h1_tag">this is some heading</h1>
+      <p class="myPara">this is a para</p>
+      <p class="myPara">this is a para2</p>
+      <p class="myPara">this is a para3</p>
+    </div>
+    <div class="second">
+      <p id="sndP">this is second para</p>
+    </div>
+
+    <button onclick="openNewWindow()">Open New Window</button>
+
+    <script>
+      const newElement = document.createElement("div");
+      newElement.textContent = "this is added by the set element property";
+
+      const paraelement = document.getElementById("sndP");
+
+      paraelement.insertAdjacentElement("afterend", newElement);
+
+      const heading = document.getElementsByClassName("heading");
+      console.log(heading[0]);
+
+      const h1_tag = document.getElementById("h1_tag");
+      console.log(h1_tag);
+
+      h1_tag.style.color = "red";
+
+      h1_tag.style.backgroundColor = "salmon";
+
+      const p_tags = document.getElementsByTagName("p");
+      //   for (p in p_tags) {
+      //     p.style.backgroundColor = "yellow";
+      //   }
+      for (p of p_tags) {
+        p.style.backgroundColor = "salmon";
+      }
+      p_tags[0].style.backgroundColor = "yellow";
+
+      // getting elements value
+
+      console.log("inner HTML", p_tags[0].innerHTML);
+
+      console.log("inner text ", p_tags[0].innerText);
+
+      console.log("outer Html", p_tags[0].outerHTML);
+
+      console.log("outer text", p_tags[0].outerText);
+
+      console.log("text content", p_tags[0].textContent);
+
+      // to change the outer html
+
+      // const outHtml = document.getElementById("sndP");
+      // console.log(outHtml);
+      // outHtml.outerHTML = "<h2>this is after resetting para outer HTMl </h2>";
+
+      const outHtml1 = document.getElementById("sndP");
+      console.log(outHtml1);
+      // Opening a new window
+
+      function openNewWindow() {
+        window.open("https://www.codehelp.in/tutorials", "_blank");
+      }
+
+      // Create a new paragraph element
+
+      var paragraph = document.createElement("p");
+
+      // Create text node
+
+      var text = document.createTextNode(
+        "This is a dynamically added paragraph."
+      );
+
+      // Append text node to paragraph element
+
+      paragraph.appendChild(text);
+
+      // Append paragraph to the body element
+
+      document.body.appendChild(paragraph);
+    </script>
+  </body>
+</html>
